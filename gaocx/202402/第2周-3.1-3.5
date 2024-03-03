@@ -1,0 +1,24 @@
+## 3.1
+
+1. 看redis的概念和kafka的概念
+- redis为什么快：1.基于内存 2.数据结构 3.一些优化，比如渐进式rehash 缓存时间戳
+- redis的io，使用多路复用，6.0开始才是多线程
+- redis的数据结构，使用List、pub/sub、Stream(未学习）实现消息队列
+- 滴滴的redis使用实践，redis集群的复制
+- kafka的分区、消费者组
+2. gmp的概念
+- 已经了解了调度的基本概念 指令的执行、线程状态、上下文切换（及多少线程是合适的，web里的magic number 3)、cpu的Cache
+- 即将进入对go调度的了解
+
+## 3.2
+1. 划细分工，对当前的进展进行仔细追踪
+- redis的RDB和AOF，及文件的解析，使用rdb-go库进行操作
+- binlog的解析、使用go-mysql/replication进行解析，基于binlog的DTS方案
+- zk的协同过程了解，使用命令及java代码模拟
+
+## 3.3
+- go基础，channel/mutex的底层原理（粗略过）
+- mysql的幻读问题及对binlog&DTS的影响
+- 缓存一致性、缓存击穿、熔断、穿透、雪崩
+- zk的状态变化、异常处理、准备看底层原理
+- k8s的idp、webhook编码练习
